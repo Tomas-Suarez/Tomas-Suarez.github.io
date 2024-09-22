@@ -1,0 +1,56 @@
+.logo-design{
+    height: 80px;
+    width: 180px;
+    padding-left: 2%;
+}
+
+.nav-bar{
+    display: flex;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: white;
+    align-items: center;
+    border-bottom: 2px solid #733e32;
+    position: fixed;
+    z-index: 1000;
+    
+    width: 100%;
+}
+
+.icon{
+    width: 45px;
+    height: 45px;
+}
+
+.redes{
+    margin-left: 41%;
+}
+
+ul li{
+    display: inline-block; /*Quitamos el listado*/
+    padding: 0 15px;
+}
+
+ul{
+    display: flex;
+    align-items: center; /*Centramos los elemenetos de la lista*/
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: cursive;
+
+}
+
+a:hover{
+    color: #733e32;
+}
+
+body{
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+
