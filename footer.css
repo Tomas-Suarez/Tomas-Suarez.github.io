@@ -7,6 +7,12 @@
     justify-content: center; /*Centramos las columnas*/
 }
 
+.footer li {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
 .est{
     list-style: none;
     display: block; /* Desactivamos el otro display flex, que me esta afectando, el de navegacion*/
@@ -30,10 +36,4 @@ h2{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     border-bottom: 2px solid;
-}
-
-li{
-    padding: 4px;
-    display: flex;           
-    align-items: center;
 }

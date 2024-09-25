@@ -22,7 +22,7 @@
 }
 
 .redes{
-    margin-left: 41%;
+    margin-left: 43.5%;
 }
 
 ul .nav{
@@ -33,6 +33,7 @@ ul .nav{
 ul{
     display: flex;
     align-items: center; /*Centramos los elemenetos de la lista*/
+    list-style-type: none;
 }
 
 a{
@@ -53,3 +54,38 @@ body{
 }
 
 
+/* Menu desplegable */
+.menu-desplegable{
+    position: relative; /* Nos sirve para posicionar el submenu*/
+}
+
+.submenu{
+    display: none; /* Ocultamos el submenu */
+    position: absolute;
+    background-color: white;
+    padding: 0;
+    z-index: 1000;
+    border: #733e32 2px solid;
+    top: 100%; /*Verlo bien, no me convence bastante*/
+    margin-left: -25%;
+}
+
+.submenu li{
+    width: 200px;
+}
+
+.submenu li a{
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+.submenu li a:hover{
+    background-color: #733e32;
+    color: white;
+}
+
+/* Mostramos el submenu al mover el mouse sobre encima de productos */
+.menu-desplegable:hover .submenu {
+    display: block;
+}
