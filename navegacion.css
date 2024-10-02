@@ -66,12 +66,12 @@ body{
     padding: 0;
     z-index: 1000;
     border: #733e32 2px solid;
-    top: 100%; /*Verlo bien, no me convence bastante*/
+    top: 100%;
     margin-left: -25%;
 }
 
 .submenu li{
-    width: 200px;
+    width: 150px;
 }
 
 .submenu li a{

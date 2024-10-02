@@ -1,0 +1,45 @@
+.form-container {
+    background-color: #D979A6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    position: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #733e32;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color:  #733e32;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 4px 4px 0  antiquewhite;
+    margin-top: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0 #D979A6;
+}
