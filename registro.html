@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   
+    <link rel="stylesheet" href="vis.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar"> <!-- Barra de navegacion-->
+        <img src="img/logo.png" alt="logo" class="logo-design">
+        <ul>
+            <li class="nav"><a href="#">INICIO</a></li>
+            <li class="nav"><a href="#">NOSOTROS</a></li><!-- Informacion sobre el local-->
+            <li class="nav"><a href="#">RESEÑAS</a></li><!-- Informacion sobre el local-->
+            <li class="nav"><a href="#">PRODUCTOS</a></li>
+            <li class="nav"><a href="#">PEDIDOS</a></li><!-- Tortas, Postres, Desayunos, Promociones -->
+            
+        </ul>
+        <ul class="redes">
+            <li class="nav"><img src="img/instagram-icon.png" alt="instagram" class="icon"></li>
+            <li class="nav"><img src="img/facebook-icon.png" alt="facebook" class="icon"></li>
+            <li class="nav"><img src="img/wsp-icon.png" alt="whatsapp" class="icon"></li>
+            <li class="nav"><a href="#">SEGUINOS</a></li> <!-- Nro de telefono, Instagram, Facebook y ubicacion del local -->
+        </ul>
+    </div>
+    <br><br><br><br><br> <!-- Colocar las modificaciones abajo de esto  -->
+   
+   
+    <div class="form-container">
+    <h2>Formulario de Contacto</h2>
+    <form id="contactForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlength="50" required>
+        <span id="nombreError" class="error"></span>
+        <br><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error"></span>
+        <br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+        <span id="telefonoError" class="error"></span>
+        <br><br>
+
+        <label for="pedido">Pedido:</label>
+        <textarea id="pedido" name="pedido" maxlength="300" required></textarea>
+        <span id="pedidoError" class="error"></span>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+    
+
+    <script src="contact.js"></script>
+
+    <br><br>
+    
+    <div class="footer"> <!--  Se situa al final de la pagina  -->
+        <div class="columna">
+            <h2>Navegacion</h2>
+            <ul class="est">
+                <li>Inicio</li>
+                <li>Productos</li>
+                <li>Nosotros</li>
+                <li>Reseñas</li>
+            </ul>
+         </div>
+
+        <div class="columna">
+            <h2>Contactanos</h2>
+            <ul class="est">
+                <li><img src="img-contacto/telefono-icon.png" alt="telefono" class="icon-peq">+54 9 266 448-4726</li>
+                <li><img src="img-contacto/instagram-peq.png" alt="instagram" class="icon-peq">Instagram</li>
+                <li><img src="img-contacto/whatsapp-peq.png" alt="wsp" class="icon-peq">WhatsApp</li>
+                <li><img src="img-contacto/facebook-peq.png" alt="facebook" class="icon-peq">Facebook</li>
+            </ul>
+        </div>
+
+        <div class="columna">
+            <h2>Ubicacion</h2>
+            <ul class="est">
+                <li><img src="img-contacto/ubicacion.png" alt="ubicacion" class="icon-peq">Junin 1201</li>
+                <li><img src="img-contacto/icon-peq.png" alt="Google maps" class="icon-peq">Maps</li>
+            </ul>
+        </div>
+
+        <div class="columna">
+            <h2>Horarios de atención</h2>
+            <ul class="est">
+                <li><img src="img-contacto/hora-icon.webp" alt="horario" class="icon-peq">Lunes a Sabados</li>
+                <li>9:00am a 14:00pm</li>
+                <li>17:00pm a 23:59pm</li>
+                <li><img src="img-contacto/hora-icon.webp" alt="horario" class="icon-peq">Domingos</li>
+                <li>18:00pm a 22:00pm</li>
+            </ul>
+        </div>
+
+        <div class="columna">
+            <h2>Metodos de pago</h2>
+            <ul class="est">
+                <li><img src="img-contacto/debitoecredito.png" alt="tarjeta" class="icon-peq">Tarjetas Debito y Credito</li>
+                <li><img src="img-contacto/efectivo.png" alt="efectivo" class="icon-peq">Efectivo</li>
+                <li><img src="img-contacto/transferencia.png" alt="transferencia" class="icon-peq">Transferencia bancaria</li>
+            </ul>
+        </div>
+        
+    </div>
+
+</body>
+</html>
