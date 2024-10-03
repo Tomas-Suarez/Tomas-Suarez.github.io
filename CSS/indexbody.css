@@ -1,0 +1,77 @@
+body {
+    margin: 20;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-content {
+    background-image: url("../IMG/imgtortas/fondos/f5c3780a6ec17ff0b64e37574c066df9.jpg"); /* Cambia por la ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center;
+    background-repeat: repeat;
+    min-height: 100vh; /* Se ajusta a la altura total de la ventana */
+    padding-top: 80px; /* Ajusta según la altura de tu navbar */
+    padding-bottom: 200px; /* Ajusta según la altura de tu footer */
+}
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0; /* Ajusta el espacio superior e inferior */
+    margin-top: 80px; /* Ajusta este valor según la altura de tu navbar */
+}
+
+.nosotros-image {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.nosotros-text {
+    max-width: 600px;
+}
+
+.nosotros-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.nosotros-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.bienvenida {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.bienvenida h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.bienvenida p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.carouselExample  {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+
+
+.btn:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
