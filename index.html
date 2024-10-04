@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="CSS/navegacion.css">
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/indexbody.css">
-    <link rel="stylesheet" href="JS/carrusel.js">
+
     <link rel="icon" href="IMG/img-icons/icon-page.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,28 +44,53 @@
             <p>Disfruta de nuestras delicias recién horneadas y vive una experiencia única en nuestro acogedor café.</p>
         </div>
 
-        <div id="carouselExample" class="carousel">
+        <div id="carouselExample" class="carousel"> 
             <div class="carousel-item active">
-                <img src="IMG/imgtortas/tortas/2369faf57586e6ba8e92b9fb79f3bac9.jpg" alt="Oferta 1">
+                <img src="IMG/imgtortas/carrusel/mini tarta.jpg" alt="Oferta 1">
                 <div class="carousel-caption">
-                    <h5>2x1 en tortas</h5>
+                    <h5>2x1 en minitartas</h5>
                 </div>
             </div>
+            
             <div class="carousel-item">
-                <img src="IMG/imgtortas/desayunos/7540ffd6ab1892a2064d3acf51f2cad5.jpg" alt="Oferta 2">
+                <img src="IMG/imgtortas/carrusel/tarta combinada.jpg" alt="Oferta 2">
                 <div class="carousel-caption">
-                    <h5>Descuentos en desayunos</h5>
+                    <h5>Tarta combinada 20% off</h5>
                 </div>
             </div>
+            
             <div class="carousel-item">
-                <img src="IMG/imgtortas/tortas/b0e523424d7389169100870ef5b40823.jpg" alt="Oferta 3">
+                <img src="IMG/imgtortas/carrusel/desayuno.jpg" alt="Oferta 3">
                 <div class="carousel-caption">
-                    <h5>Pasteles personalizados</h5>
+                    <h5>Descuentos en desayunos 15% off</h5>
                 </div>
             </div>
+            
+            <div class="carousel-item">
+                <img src="IMG/imgtortas/carrusel/desayuno 2.jpg" alt="Oferta 4">
+                <div class="carousel-caption">
+                    <h5>Descuentos en desayunos 15% off</h5>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="IMG/imgtortas/carrusel/torta.png" alt="Oferta 5">
+                <div class="carousel-caption">
+                    <h5>Pasteles personalizados 10% off</h5>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="IMG/imgtortas/carrusel/torta 2.jpg" alt="Oferta 6">
+                <div class="carousel-caption">
+                    <h5>Pasteles personalizados 10% off</h5>
+                </div>
+            </div>
+            
             <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
             <button class="next" onclick="moveCarousel(1)">&#10095;</button>
         </div>
+        
         
             
      
@@ -142,6 +167,34 @@
         </div>
         
     </div>
+    <script>
+        let currentIndex = 0;
+        const items = document.getElementsByClassName('carousel-item');
+        const totalItems = items.length;
+        const intervalTime = 3000; // Tiempo en milisegundos (3 segundos)
 
+        function showItem(index) {
+            for (let i = 0; i < totalItems; i++) {
+                items[i].classList.remove('active');
+            }
+            items[index].classList.add('active');
+        }
+
+        function moveCarousel(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = totalItems - 1;
+            } else if (currentIndex >= totalItems) {
+                currentIndex = 0;
+            }
+            showItem(currentIndex);
+        }
+
+        showItem(currentIndex);
+
+        setInterval(() => {
+            moveCarousel(1);
+        }, intervalTime);
+    </script>
 </body>
 </html>

@@ -87,3 +87,14 @@ a:hover{
 .menu-desplegable:hover .submenu {
     display: block;
 }
+
+.main-content {
+    background-image: url("../IMG/imgtortas/fondos/f5c3780a6ec17ff0b64e37574c066df9.jpg"); /* Cambia por la ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center;
+    background-repeat: repeat;
+    min-height: 100vh; /* Se ajusta a la altura total de la ventana */
+    padding-top: 80px; /* Ajusta según la altura de tu navbar */
+    padding-bottom: 200px; /* Ajusta según la altura de tu footer */
+    background-attachment: fixed; /* Esto hace que el fondo se mantenga fijo al hacer scroll */
+}
