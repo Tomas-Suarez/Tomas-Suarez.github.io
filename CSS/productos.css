@@ -1,6 +1,6 @@
 .imagenProduct{
     height: 275px;
-    width: 250px;
+    width: 275px;
     border-radius: 6px;
 }
 
@@ -23,8 +23,16 @@
     background-color: #FF9AA2;
     border-radius: 5px;
     padding: 4px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .product-precio{
-    padding-left: 43%;
+    text-align: center;
+    background-color: #E2F0C8;
+}
+
+.imagenProduct:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
 }

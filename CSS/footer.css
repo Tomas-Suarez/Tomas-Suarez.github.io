@@ -17,7 +17,7 @@
     list-style: none;
     display: block; /* Desactivamos el otro display flex, que me esta afectando, el de navegacion*/
     padding: 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .columna{
@@ -25,8 +25,8 @@
 }
 
 .icon-peq{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-right: 5px;
 }
 
