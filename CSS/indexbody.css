@@ -1,7 +1,7 @@
 body {
     margin: 20;
     padding: 0;
-    font-family: Arial, sans-serif;
+    
 }
 
 .main-content {
@@ -12,6 +12,7 @@ body {
     min-height: 100vh; /* Se ajusta a la altura total de la ventana */
     padding-top: 80px; /* Ajusta según la altura de tu navbar */
     padding-bottom: 200px; /* Ajusta según la altura de tu footer */
+    background-attachment: fixed; /* Esto hace que el fondo se mantenga fijo al hacer scroll */
 }
 
 .nosotros {
@@ -60,18 +61,63 @@ body {
     margin: 20px 0;
 }
 
-.carouselExample  {
+.carousel {
     position: relative;
     width: 100%;
-    max-width: 800px;
-    margin: 40px auto;
+    max-width: 600px;
+    margin: auto;
     overflow: hidden;
 }
 
-
-
-.btn:hover {
-    background-color: #ff4500;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
+.carousel-item {
+    display: none;
+    width: 100%;
 }
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.active {
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+
+
+.bienvenida h1.dancing-script-title {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
