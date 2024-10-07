@@ -4,15 +4,24 @@
     font-weight: bold;
     display: flex;
     align-items: center;
+    font-size: 14px;
 }
 
 .Titulo::before, .Titulo::after {
     content: "";
     flex: 1;
     border-bottom: 1px solid grey;
-    margin: 12px;
+    margin: 15px;
 }
 
+.filtrado-container h4 {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 4px;
+  padding-bottom: 10px;
+}
 
 .card-products {
     display: inline-block;
@@ -23,8 +32,8 @@
   }
   
  .card-products img {
-    height: 400px;
-    width: 450px;
+    height: 300px;
+    width: 300px;
   }
   
  .card-products h3, .card-products .price{
@@ -32,19 +41,47 @@
   }
 
  .card-products h3, .card-products .price, .card-products img{
-    border: 1px solid black;
+    margin: 0px;
   }
 
 .filtrado-container{
     display: flex;
     flex-direction: column;
-    width: 16.6%;  
 }
 
  .botonFiltrado{
     margin-bottom: 7px;
-    width: 180px;
+    width: 250px;
     background-color: #E2F0C8;
     padding: 5px;
-    font-family: "Montserrat";
+    font-family: cursive;
+    font-size: 17px;
+ }
+
+ .botonAll{
+    margin-top: 12px;
+    border: none;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: transparent;
+ }
+
+ .acomodar{
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+ }
+
+ .botonFiltrado:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  color: grey;
+ }
+ 
+ .botonAll:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  color: #FF9AA2;
  }

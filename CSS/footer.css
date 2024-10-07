@@ -1,3 +1,9 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .footer{
     display:flex;
     background-color: #FFB7B2;
@@ -5,19 +11,19 @@
     padding-top: 7px;
     border-top: 2px solid #733e32;
     justify-content: center; /*Centramos las columnas*/
+
 }
 
 .footer li {
     padding: 4px;
     display: flex;
-    align-items: center;
+    align-items: center; /* Ajusta el icono con el texto, queda centrado */
 }
 
 .est{
-    list-style: none;
     display: block; /* Desactivamos el otro display flex, que me esta afectando, el de navegacion*/
     padding: 0;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .columna{
