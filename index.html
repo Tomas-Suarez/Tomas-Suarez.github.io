@@ -43,7 +43,7 @@
             <h1 class="dancing-script-title">Bienvenidos a Le Petit</h1>
             <p>Disfruta de nuestras delicias recién horneadas y vive una experiencia única en nuestro acogedor café.</p>
         </div>
-
+        <br><br>
         <div id="carouselExample" class="carousel"> 
             <div class="carousel-item active">
                 <img src="IMG/imgtortas/carrusel/mini tarta.jpg" alt="Oferta 1">
@@ -91,12 +91,6 @@
             <button class="next" onclick="moveCarousel(1)">&#10095;</button>
         </div>
         
-        
-            
-     
-        
-
-
         <div class="nosotros">
             <img src="IMG/imgtortas/cafes/cafe.jpg" alt="Pastelería Café" class="nosotros-image">
             <div class="nosotros-text">
@@ -167,34 +161,6 @@
         </div>
         
     </div>
-    <script>
-        let currentIndex = 0;
-        const items = document.getElementsByClassName('carousel-item');
-        const totalItems = items.length;
-        const intervalTime = 3000; // Tiempo en milisegundos (3 segundos)
-
-        function showItem(index) {
-            for (let i = 0; i < totalItems; i++) {
-                items[i].classList.remove('active');
-            }
-            items[index].classList.add('active');
-        }
-
-        function moveCarousel(direction) {
-            currentIndex += direction;
-            if (currentIndex < 0) {
-                currentIndex = totalItems - 1;
-            } else if (currentIndex >= totalItems) {
-                currentIndex = 0;
-            }
-            showItem(currentIndex);
-        }
-
-        showItem(currentIndex);
-
-        setInterval(() => {
-            moveCarousel(1);
-        }, intervalTime);
-    </script>
+    <script src="JS/index.js"></script>
 </body>
 </html>
