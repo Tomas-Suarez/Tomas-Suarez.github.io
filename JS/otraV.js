@@ -6,73 +6,73 @@ const products = [
     {
         productName: "Tarta de Cereza",
         price: 2000,
-        img: "../img/imgtortas/tortas/torta1.jpg",
+        img: "../IMG/imgtortas/tortas/torta1.jpg",
         category: "Tartas de Frutas"
     },
     {
         productName: "Pastel de Chocolate con Fresas",
         price: 1900,
-        img: "../img/imgtortas/tortas/torta2.jpg",
+        img: "../IMG/imgtortas/tortas/torta2.jpg",
         category: "Pasteles de Chocolate"
     },
     {
         productName: "Pastel de Durazno y Crema",
         price: 2900,
-        img: "../img/imgtortas/tortas/torta3.jpg",
+        img: "../IMG/imgtortas/tortas/torta3.jpg",
         category: "Pasteles con Crema"
     },
     {
         productName: "Chocotorta",
         price: 1500,
-        img: "../img/imgtortas/tortas/torta4.jpg",
+        img: "../IMG/imgtortas/tortas/torta4.jpg",
         category: "Pasteles de Chocolate"
     },
     {
         productName: "Pastel de Chocolate Clásico",
         price: 2200,
-        img: "../img/imgtortas/tortas/torta5.jpg",
+        img: "../IMG/imgtortas/tortas/torta5.jpg",
         category: "Pasteles de Chocolate"
     },
     {
         productName: "Tarta de Limón con Merengue",
         price: 2200,
-        img: "../img/imgtortas/tortas/torta6.jpg",
+        img: "../IMG/imgtortas/tortas/torta6.jpg",
         category: "Tartas con Merengue"
     },
     {
         productName: "Cheesecake de Frutos Rojos",
         price: 2200,
-        img: "../img/imgtortas/tortas/torta7.jpg",
+        img: "../IMG/imgtortas/tortas/torta7.jpg",
         category: "Tartas de Frutas"
     },
     {
         productName: "Pastel de Fresas con Crema",
         price: 2200,
-        img: "../img/imgtortas/tortas/torta8.webp",
+        img: "../IMG/imgtortas/tortas/torta8.webp",
         category: "Tartas de Frutas"
     },
     {
         productName: "Torta de Tres Chocolate",
         price: 2200,
-        img: "../img/imgtortas/tortas/torta9.jpg",
+        img: "../IMG/imgtortas/tortas/torta9.jpg",
         category: "Pasteles de Chocolate"
     },
     {
         productName: "Tarta de Chocolate con Merengue",
         price: 2200,
-        img: "../img/imgtortas/tortas/torta10.jpg",
+        img: "../IMG/imgtortas/tortas/torta10.jpg",
         category: "Tartas con Merengue"
     },
     {
         productName: "Pastel de Zanahoria con Nueces",
         price: 2200,
-        img: "../img/imgtortas/tortas/torta11.jpg",
+        img: "../IMG/imgtortas/tortas/torta11.jpg",
         category: "Pasteles y Tartas de Nuez o Zanahoria"
     },
     {
         productName: "Tarta de Frutas Frescas",
         price: 2200,
-        img: "../img/imgtortas/tortas/torta12.jpg",
+        img: "../IMG/imgtortas/tortas/torta12.jpg",
         category: "Tartas de Frutas"
     }
 ];
