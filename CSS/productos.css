@@ -1,3 +1,31 @@
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;  
+}
+
+.columm {
+  margin: 0 50px;
+}
+
+.img-h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.contenido h3, .contenido p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
 
 .Titulo{
     font-family:cursive;
@@ -5,13 +33,15 @@
     display: flex;
     align-items: center;
     font-size: 14px;
+    margin: 8px 0; 
+    padding: 8px 0; 
 }
 
 .Titulo::before, .Titulo::after {
     content: "";
     flex: 1;
     border-bottom: 1px solid grey;
-    margin: 15px;
+    margin: 0 25px; 
 }
 
 .filtrado-container h4 {
@@ -69,9 +99,10 @@
  }
 
  .acomodar{
-  display: flex;
-  margin-left: 10%;
-  margin-right: 10%;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
  }
 
  .botonFiltrado:hover{
@@ -85,3 +116,6 @@
   transition: transform 0.3s ease;
   color: #FF9AA2;
  }
+
+
+

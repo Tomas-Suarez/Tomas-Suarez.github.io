@@ -1,3 +1,7 @@
+/* Probando agregar otras cosas 
+    Seria una version 2
+*/
+
 const products = [
     {
         productName: "Tarta de Cereza",
@@ -92,7 +96,16 @@ function displayProducts() {
         shopContent.appendChild(div);
     }
 }
-//Obtenemos la referencia de los botones
+//Volvemos a su estado original los botones
+function resetearBotones() {
+    bTartasFrutas.textContent = "☐ Tartas de Frutas";
+    bPastelesChocolate.textContent = "☐ Pasteles de Chocolate";
+    bTartasMerengue.textContent = "☐ Tartas con Merengue";
+    bPastelesNuezZanahoria.textContent = "☐ Pasteles con Nuez";
+    bPastelesCrema.textContent = "☐ Pasteles con Crema";
+}
+
+// Obtenemos la referencia de los botones
 const bTartasFrutas = document.getElementById("bTartasFrutas");
 const bPastelesChocolate = document.getElementById("bPastelesChocolate");
 const bTartasMerengue = document.getElementById("bTartasMerengue");
@@ -100,13 +113,41 @@ const bPastelesNuezZanahoria = document.getElementById("bPastelesNuezZanahoria")
 const bPastelesCrema = document.getElementById("bPastelesCrema");
 const bTodos = document.getElementById("bTodos");
 
-//Agregamos los eventos a los botones
-bTartasFrutas.addEventListener("click", () => FiltrarProductos("Tartas de Frutas"));
-bPastelesChocolate.addEventListener("click", () => FiltrarProductos("Pasteles de Chocolate"));
-bTartasMerengue.addEventListener("click", () => FiltrarProductos("Tartas con Merengue"));
-bPastelesNuezZanahoria.addEventListener("click", () => FiltrarProductos("Pasteles y Tartas de Nuez o Zanahoria"));
-bPastelesCrema.addEventListener("click", () => FiltrarProductos("Pasteles con Crema"));
-bTodos.addEventListener("click", () => displayProducts());
+// Agregamos los eventos a los botones
+bTartasFrutas.addEventListener("click", () => {
+    resetearBotones(); 
+    FiltrarProductos("Tartas de Frutas");
+    bTartasFrutas.textContent = "☑ Tartas de Frutas";
+});
+
+bPastelesChocolate.addEventListener("click", () => {
+    resetearBotones();
+    FiltrarProductos("Pasteles de Chocolate");
+    bPastelesChocolate.textContent = "☑ Pasteles de Chocolate";
+});
+
+bTartasMerengue.addEventListener("click", () => {
+    resetearBotones();
+    FiltrarProductos("Tartas con Merengue");
+    bTartasMerengue.textContent = "☑ Tartas con Merengue";
+});
+
+bPastelesNuezZanahoria.addEventListener("click", () => {
+    resetearBotones();
+    FiltrarProductos("Pasteles y Tartas de Nuez o Zanahoria");
+    bPastelesNuezZanahoria.textContent = "☑ Pasteles con Nuez";
+});
+
+bPastelesCrema.addEventListener("click", () => {
+    resetearBotones();
+    FiltrarProductos("Pasteles con Crema");
+    bPastelesCrema.textContent = "☑ Pasteles con Crema"; 
+});
+
+bTodos.addEventListener("click", () => {
+    resetearBotones(); 
+    displayProducts(); 
+});
 
 //Filtrado de productos
 function FiltrarProductos(productCategory){

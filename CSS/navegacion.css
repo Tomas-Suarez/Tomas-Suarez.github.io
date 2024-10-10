@@ -18,6 +18,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 .icon{
@@ -40,7 +42,7 @@ ul{
     list-style-type: none;
 }
 
-a{
+.nav-bar a{
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -69,7 +71,7 @@ a:hover{
 }
 
 .submenu li{
-    width: 150px;
+    width: 165px;
 }
 
 .submenu li a{
@@ -94,7 +96,7 @@ a:hover{
     background-position: center;
     background-repeat: repeat;
     min-height: 100vh; /* Se ajusta a la altura total de la ventana */
-    padding-top: 80px; /* Ajusta según la altura de tu navbar */
-    padding-bottom: 200px; /* Ajusta según la altura de tu footer */
+    padding-top: 60px; /* Ajusta según la altura de tu navbar */
+    padding-bottom: 40px; /* Ajusta según la altura de tu footer */
     background-attachment: fixed; /* Esto hace que el fondo se mantenga fijo al hacer scroll */
 }
