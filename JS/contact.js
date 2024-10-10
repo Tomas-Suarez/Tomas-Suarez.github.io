@@ -80,3 +80,90 @@ document.getElementById('email').value = '';
 document.getElementById('telefono').value = '';
 document.getElementById('pedido').value = '';
 }
+
+// Manejar el despliegue y ocultar respuestas
+document.querySelectorAll('.reply-toggle').forEach(function(button) {
+    button.addEventListener('click', function() {
+        const repliesContainer = this.parentElement.nextElementSibling;
+        if (repliesContainer.style.display === 'none') {
+            repliesContainer.style.display = 'block';
+            this.textContent = 'Ocultar respuestas ▲';
+        } else {
+            repliesContainer.style.display = 'none';
+            this.textContent = 'Ver las respuestas ▼';
+        }
+    });
+});
+
+// Función para manejar la acción de RESPONDER
+document.querySelectorAll('.reply-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        const commentFooter = this.parentElement;
+        let replyInput = commentFooter.querySelector('.reply-input');
+        
+        // Si ya existe un campo de respuesta, no lo duplicamos
+        if (replyInput) {
+            return;
+        }
+
+        // Crear el contenedor para la respuesta
+        replyInput = document.createElement('div');
+        replyInput.classList.add('reply-input');
+        
+        // Crear el campo de texto para la respuesta
+        const input = document.createElement('textarea');
+        input.placeholder = "Escribe tu respuesta aquí...";
+        input.rows = 3;
+        input.style.width = "100%";
+        input.style.marginTop = "10px";
+        
+        // Crear el botón para enviar la respuesta
+        const submitBtn = document.createElement('button');
+        submitBtn.textContent = "Enviar Respuesta";
+        submitBtn.style.marginTop = "10px";
+        submitBtn.style.padding = "8px 16px";
+        submitBtn.style.backgroundColor = "#C7CEEA";
+        submitBtn.style.border = "none";
+        submitBtn.style.color = "white";
+        submitBtn.style.cursor = "pointer";
+        submitBtn.style.borderRadius = "5px";
+        
+        // Acción al enviar la respuesta
+        submitBtn.addEventListener('click', function() {
+            const replyText = input.value.trim();
+            
+            if (replyText === "") {
+                alert("La respuesta no puede estar vacía.");
+                return;
+            }
+            
+            // Crear una nueva respuesta en el contenedor de respuestas
+            const newReply = document.createElement('div');
+            newReply.classList.add('reply');
+            newReply.innerHTML = `
+                <div class="comment-header">
+                    <div class="avatar">U</div> <!-- Puedes cambiar la lógica del avatar si tienes datos de usuario -->
+                    <div class="comment-info">
+                        <strong>Usuario</strong> <span class="time">Justo ahora</span>
+                    </div>
+                </div>
+                <div class="comment-body">
+                    <p>${replyText}</p>
+                </div>
+            `;
+            
+            // Agregar la nueva respuesta al contenedor de respuestas
+            const repliesContainer = commentFooter.nextElementSibling;
+            repliesContainer.appendChild(newReply);
+            repliesContainer.style.display = 'block';
+            
+            // Limpiar el campo de respuesta y eliminar el cuadro de texto
+            replyInput.remove();
+        });
+        
+        // Añadir el campo de texto y el botón al contenedor de respuestas
+        replyInput.appendChild(input);
+        replyInput.appendChild(submitBtn);
+        commentFooter.appendChild(replyInput);
+    });
+});
