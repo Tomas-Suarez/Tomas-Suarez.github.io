@@ -85,11 +85,11 @@ document.getElementById('pedido').value = '';
 document.querySelectorAll('.reply-toggle').forEach(function(button) {
     button.addEventListener('click', function() {
         const repliesContainer = this.parentElement.nextElementSibling;
-        if (repliesContainer.style.display === 'none') {
-            repliesContainer.style.display = 'block';
+        if (repliesContainer.style.display === 'none' || repliesContainer.style.display === '') {
+            repliesContainer.style.display = 'block'; // Mostrar respuestas
             this.textContent = 'Ocultar respuestas ▲';
         } else {
-            repliesContainer.style.display = 'none';
+            repliesContainer.style.display = 'none'; // Ocultar respuestas
             this.textContent = 'Ver las respuestas ▼';
         }
     });

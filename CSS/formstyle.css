@@ -7,17 +7,46 @@ body {
     margin: 0;
     padding: 0;
 }
+.form-and-map {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el formulario y el mapa */
+    align-items: flex-start; /* Alinea el contenido verticalmente al principio */
+    gap: 5px; /* Espacio entre el formulario y el mapa */
+    margin-top: 0px;
+}
 
 .form-container {
     background-color: #C7CEEA;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
+    max-width: 600px;
     margin: 80px auto;
     text-align: left;
+    flex: 1; /* El formulario ocupa el espacio disponible */
 }
-
+/* Centrar el mapa */
+.map-container {
+    display: flex;
+    background-color: #C7CEEA;
+    flex-direction: column; /* Asegura que los elementos dentro se coloquen uno debajo del otro */
+    align-items: left; 
+    max-width: 600px;
+    max-height: 400px;    
+    justify-content: left;
+    margin: 80px auto;
+    flex: 1;
+    text-align: left; /* Alineación del texto */
+    margin-bottom: 10px; /* Espacio entre el título y el mapa */
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.map-container iframe {
+    flex: 1; /* Hace que el mapa ocupe todo el espacio disponible */
+    width: 100%; /* Asegura que el mapa se ajuste al tamaño del contenedor */
+     /* El mapa se adapta a la altura del contenedor */
+}
 h2 {
     font-size: 28px;
     color: #333;
@@ -80,7 +109,7 @@ button {
     border: none;
     border-radius: 8px;
     font-size: 16px;
-    color: white;
+    color: black;
     font-weight: 500;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -96,18 +125,6 @@ button:active {
     transform: translateY(0);
 }
 
-
-/* Centrar el mapa */
-.map-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-iframe {
-    border-radius: 8px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-}
 
 /* Estilos para la sección de comentarios */
 .comments-section {
@@ -246,22 +263,4 @@ iframe {
     color: white;
     margin-right: 10px;
     font-size: 16px;
-}
-/* Asegura que el footer quede en la parte inferior */
-.footer {
-    background-color: #FFB7B2;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-    width: 100%;
-}
-
-.footer .columna {
-    flex: 1;
-    padding: 10px;
-}
-
-.footer h2 {
-    margin-bottom: 10px;
 }
