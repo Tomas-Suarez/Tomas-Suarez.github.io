@@ -1,45 +1,134 @@
+/* Importa la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
 .form-container {
     background-color: #C7CEEA;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    position: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 80px auto;
+    text-align: left;
 }
-/*colores FF9AA2 FFB7B2  FFDAC1  E2FOCB  B5EAD7  C7CEEA*/
-form {
+1-FF9AA2
+2-FFB7B2
+3-FFDAC1
+4-E2FOC8
+5-B5EAD7
+6-C7CEEA
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form-row {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 label {
-    margin-bottom: 5px;
-    font-weight: bold;
+    width: 150px; /* Ancho uniforme para los labels */
+    font-size: 16px;
+    text-align: right;
+    margin-right: 10px;
+    color: #555;
 }
 
 input[type="text"],
-input[type="number"],
-input[type="email"] {
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #B5EAD7;
-    border-radius: 4px;
+input[type="email"],
+textarea {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #f1e1e3;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    background-color: #eee9e8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: white;
+    box-shadow: 0 4px 12px white;
+    outline: none;
+}
+
+.form-row.textarea-row {
+    align-items: flex-start; /* Alinea el label al inicio del textarea */
 }
 
 button {
+    display: block;
+    width: 100px;
     padding: 10px;
-    background-color:  #E2F0CB;
+    margin: 20px auto; /* Centra el botón */
+    background-color: #B5EAD7;
     border: none;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
     cursor: pointer;
-    position: relative;
-    box-shadow: 4px 4px 0  #FFB7B2;
-    margin-top: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    transform: translate(-4px, -4px);
-    box-shadow: 8px 8px 0 #FF9AA2;
+    background-color: #FFB7B2;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* Centrar el mapa */
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+iframe {
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegura que el footer quede en la parte inferior */
+.footer {
+    background-color: #FFB7B2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer .columna {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
 }
