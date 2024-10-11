@@ -88,9 +88,11 @@ document.querySelectorAll('.reply-toggle').forEach(function(button) {
         if (repliesContainer.style.display === 'none' || repliesContainer.style.display === '') {
             repliesContainer.style.display = 'block'; // Mostrar respuestas
             this.textContent = 'Ocultar respuestas ▲';
+            console.log('Mostrando respuestas');
         } else {
             repliesContainer.style.display = 'none'; // Ocultar respuestas
             this.textContent = 'Ver las respuestas ▼';
+            console.log('Ocultando respuestas');
         }
     });
 });
@@ -142,7 +144,7 @@ document.querySelectorAll('.reply-btn').forEach(function(button) {
             newReply.classList.add('reply');
             newReply.innerHTML = `
                 <div class="comment-header">
-                    <div class="avatar">U</div> <!-- Puedes cambiar la lógica del avatar si tienes datos de usuario -->
+                    <div class="avatar">U</div> <!-- Cambiar la lógica del avatar si tienes datos del usuario -->
                     <div class="comment-info">
                         <strong>Usuario</strong> <span class="time">Justo ahora</span>
                     </div>
@@ -159,6 +161,7 @@ document.querySelectorAll('.reply-btn').forEach(function(button) {
             
             // Limpiar el campo de respuesta y eliminar el cuadro de texto
             replyInput.remove();
+            console.log('Respuesta añadida:', replyText);
         });
         
         // Añadir el campo de texto y el botón al contenedor de respuestas
