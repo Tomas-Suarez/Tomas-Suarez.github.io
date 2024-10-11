@@ -42,11 +42,7 @@ body {
     border-radius: 12px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.map-container iframe {
-    flex: 1; /* Hace que el mapa ocupe todo el espacio disponible */
-    width: 100%; /* Asegura que el mapa se ajuste al tamaño del contenedor */
-     /* El mapa se adapta a la altura del contenedor */
-}
+
 h2 {
     font-size: 28px;
     color: #333;
@@ -226,31 +222,11 @@ button:active {
 }
 
 /* Estilo para el cuadro de texto para responder */
-.reply-input textarea {
-    width: 100%;
-    margin-top: 10px;
-    padding: 8px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    resize: none;
+.reply {
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    margin-left: 40px; /* Indentar respuestas */
 }
-
-/* Estilo para el botón de enviar respuesta */
-.reply-input button {
-    background-color: #C7CEEA;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 16px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.reply-input button:hover {
-    background-color: #A0A9E6;
-}
-
 
 .reply .avatar {
     width: 30px;
@@ -263,4 +239,28 @@ button:active {
     color: white;
     margin-right: 10px;
     font-size: 16px;
+}
+
+.reply-input textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.reply-input button {
+    background-color: #C7CEEA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.reply-input button:hover {
+    background-color: #A0A9E6;
 }
