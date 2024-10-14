@@ -115,6 +115,32 @@ button:active {
     transform: translateY(0);
 }
 
+.form-row {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.tooltip-error {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+input.error + .tooltip-error {
+    display: block;
+}
+
+input.error {
+    border: 2px solid #f44336;
+}
+
 
 /* Estilos para la sección de comentarios */
 .comments-section {

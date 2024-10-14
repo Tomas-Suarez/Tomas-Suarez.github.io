@@ -35,27 +35,29 @@
                     <div class="form-row">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" maxlength="50" required>
-                        <span id="nombreError" class="error"></span>
+                        <span id="nombreError" class="tooltip-error"></span>
                     </div>
                     <div class="form-row">
                         <label for="email">Correo Electrónico:</label>
                         <input type="email" id="email" name="email" required>
-                        <span id="emailError" class="error"></span>
+                        <span id="emailError" class="tooltip-error"></span>
                     </div>
                     <div class="form-row">
                         <label for="telefono">Teléfono:</label>
                         <input type="text" id="telefono" name="telefono" required>
-                        <span id="telefonoError" class="error"></span>
+                        <span id="telefonoError" class="tooltip-error"></span>
                     </div>
                     <div class="form-row">
                         <label for="pedido">Pedido:</label>
-                        <textarea id="pedido" name="pedido" maxlength="300" required></textarea>
-                        <span id="pedidoError" class="error"></span>
+                        <textarea id="texpedido" name="texpedido" maxlength="300" required></textarea>
+                        <span id="pedidoError" class="tooltip-error"></span>
                     </div>
 
                     <button type="submit">Enviar</button>
                 </form>
+                <div id="resultado"></div>
             </div>
+            
             <!-- El mapa está fuera del formulario -->
             <div class="map-container">
                 <h2>Visitanos aquí 🔻</h2>
