@@ -21,6 +21,13 @@
     font-style: normal;
   }
 
+.nos h2.dancing-script-title {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} 
+
 .carousel {
     position: relative;
     width: 100%;
