@@ -28,7 +28,7 @@
     font-style: normal;
 } 
 
-.carousel {
+.Carrusel {
     position: relative;
     width: 100%;
     max-width: 600px;
@@ -36,21 +36,7 @@
     overflow: hidden;
 }
 
-.carousel-item {
-    display: none;
-    width: 100%;
-}
-
-.carousel-item img {
-    width: 100%;
-    display: block;
-}
-
-.active {
-    display: block;
-}
-
-.carousel-caption {
+.Carrusel h5 {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -60,26 +46,32 @@
     padding: 10px;
 }
 
-button.prev, button.next {
+
+.nextButton, .backButton {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+}
+
+button.buttonB, button.buttonN{
+    background-color: transparent;
     border: none;
+    color: white;
     cursor: pointer;
     padding: 10px;
 }
 
-button.prev {
+.backButton {
     left: 0;
 }
 
-button.next {
+.nextButton {
     right: 0;
 }
 
-.carousel-item img {
+
+
+.Carrusel img {
     width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor */
     height: 400px; /* Establece una altura fija para todas las imágenes */
     object-fit: cover; /* Recorta la imagen para que encaje sin distorsión */
