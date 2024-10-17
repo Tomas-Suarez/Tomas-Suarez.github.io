@@ -24,9 +24,12 @@
 .contenido h3, .contenido p {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: cursive;
 }
-
+.contenido h3{
+  font-size: 20px;
+  font-family: cursive;
+}
 
 .Titulo{
     font-family:cursive;

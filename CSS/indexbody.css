@@ -4,29 +4,20 @@
     padding: 50px 20px;
 }
 
-.bienvenida h1 {
-    font-size: 3rem;
-    color: #333;
-}
-
 .bienvenida p {
-    font-size: 1.5rem;
+    font-size: 20px;
     margin: 20px 0;
+    font-family: "Catamaran", sans-serif;
 }
 
 .bienvenida h1.dancing-script-title {
     font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
+    font-optical-sizing: 70px;
+    font-weight: 700;
     font-style: normal;
+    color: #333;
+    font-size: 50px;
   }
-
-.nos h2.dancing-script-title {
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-} 
 
 .carousel {
     position: relative;
@@ -93,7 +84,22 @@ button.next {
     margin-top: 80px; /* Ajusta este valor según la altura de tu navbar */
 }
 
-.nosotros-image {
+.nosotros h2 {
+    font-family: "Catamaran", sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.nosotros p {
+
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px; /* Aproximadamente 48px */
+ }
+
+ .nosotros-image {
     width: 400px;
     height: auto;
     border-radius: 10px;
@@ -101,16 +107,9 @@ button.next {
 }
 
 .nosotros-text {
-    max-width: 600px;
+    max-width: 800px;
 }
 
-.nosotros-text h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
 
-.nosotros-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
+
+.
