@@ -119,8 +119,6 @@ button:active {
     transform: translateY(0);
 }
 
-
-
 .tooltip-error {
     display: none;
     position: absolute;
@@ -152,6 +150,8 @@ input.error {
     background-color: #f2f2f2; /* Fondo gris claro */
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
 }
 
 /* Estilos individuales para cada comentario */
