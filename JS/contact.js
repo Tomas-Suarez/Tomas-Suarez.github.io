@@ -72,7 +72,6 @@ function mostrarResultado(nombre, email, telefono, pedido) {
         <p>Nombre: ${nombre}</p>
         <p>Correo Electrónico: ${email}</p>
         <p>Teléfono: ${telefono}</p>
-        <p>Pedido: ${pedido}</p>
         <p style="color: green;">El formulario ha sido enviado correctamente.</p>
     `;
 }
